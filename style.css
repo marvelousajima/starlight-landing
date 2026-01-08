@@ -1,0 +1,287 @@
+body {
+    line-height: 1.6;
+  }
+  
+  h1, h2, h3 {
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  
+  p {
+    max-width: 600px;
+    margin: 0 auto 20px auto;
+  }
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0f0f1a;
+    color: white;
+  }
+
+  /* FADE-IN ANIMATION */
+  .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.8s ease;
+  }
+  
+  .fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  
+  header {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #ff4d6d;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    opacity: 0.75;
+  }
+  .features {
+    padding: 80px 20px;
+    background: white;
+    color: #111;
+    text-align: center;
+  }
+  
+  .features h2 {
+    margin-bottom: 40px;
+    font-size: 32px;
+  }
+  
+  .feature-list {
+    display: flex;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .feature {
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 12px;
+    flex: 1;
+  }
+  header h1 {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  
+  .features h3 {
+    text-transform: uppercase;
+    font-size: 18px;
+  }
+  .waitlist {
+    background: #111;
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+  }
+  
+  .waitlist h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+  }
+  
+  .waitlist p {
+    margin-bottom: 30px;
+  }
+  
+  .waitlist form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .waitlist input[type="email"] {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    flex: 1;
+    min-width: 200px;
+  }
+  
+  .waitlist button {
+    padding: 12px 24px;
+    background: #ff4d6d;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+  }
+  
+  .waitlist button:hover {
+    opacity: 0.75;
+  }
+  
+  #successMsg {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #ff4d6d;
+  }
+  
+  /* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    .feature-list {
+      flex-direction: column;
+    }
+  
+    header h1 {
+      font-size: 32px;
+    }
+  
+    header p {
+      font-size: 16px;
+    }
+
+    @media (max-width: 768px) {
+        .brand-image {
+          width: 150px;
+        }
+      }
+      
+  
+    .waitlist form {
+      flex-direction: column;
+    }
+  
+    .waitlist input[type="email"],
+    .waitlist button {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    header h1 {
+      font-size: 28px;
+    }
+  
+    .features h2,
+    .waitlist h2 {
+      font-size: 24px;
+    }
+  
+    .features .feature h3 {
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .social-links {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+   
+  .contact {
+    background: #222;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .contact h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .contact p {
+    margin-bottom: 30px;
+  }
+  
+  .social-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .social-links li {
+    font-size: 16px;
+  }
+  
+  .social-links a {
+    color: #a35665;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .social-links a:hover {
+    opacity: 0.8;
+  }
+  
+  .brand-image {
+    width: 200px;
+    max-width: 80%;
+    margin-bottom: 30px;
+    border-radius: 12px;
+  }
+  
+  footer {
+    background: #000;
+    color: #777;
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 14px;
+  }
+  
+  footer p {
+    margin: 5px 0;
+  }
+  
+  .products {
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+  }
+  
+  .product img {
+    width: 100%;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .product-name {
+    margin: 10px 0 5px;
+    font-weight: bold;
+  }
+  
+  .product-price {
+    color: #777;
+    font-size: 14px;
+  }
+  
+  /* Hover effect */
+  .product img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+  }
+  
